@@ -13,7 +13,6 @@ function Register() {
      const response= await axios.post('http://localhost:3001/register',{
         name,email,password
       })
-      console.log("------",response.status)
       if(response.status==200){
         navigate('/')
       }
